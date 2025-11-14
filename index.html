@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognitively Yours - AI-Powered Content with a Human Soul</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Inter:wght@400;700&display=swap' );
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-serif {
+            font-family: 'Lora', serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(120deg, #4a5568 0%, #2d3748 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="gradient-bg text-white shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-serif font-semibold">
+                Cognitively Yours
+            </div>
+            <div>
+                <a href="#contact" class="bg-white text-gray-800 font-semibold py-2 px-4 rounded-lg shadow-sm hover:bg-gray-100 transition duration-300">Get Started</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-16">
+
+        <!-- Hero Section -->
+        <section class="text-center">
+            <h1 class="text-4xl md:text-5xl font-serif font-semibold text-gray-900 leading-tight">
+                Content with a Conscience.
+            </h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                In a world of generic AI content, we deliver what's missing: empathy, strategy, and a genuinely human touch. We combine human-centered personas with powerful AI to create outstanding content that connects, at the speed your business needs.
+            </p>
+            <div class="mt-8">
+                <a href="#contact" class="bg-gray-800 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-900 transition duration-300 text-lg">
+                    Request a Content Strategy Call
+                </a>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="mt-20">
+            <h2 class="text-3xl font-serif font-semibold text-center mb-12">Our Method: The Human-AI Partnership</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">1. Define the Persona</h3>
+                    <p class="text-gray-600">We start with strategy, not prompts. We work with you to define the "Human Persona"—the voice, tone, and worldview—that will resonate most with your audience.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">2. AI-Powered Drafting</h3>
+                    <p class="text-gray-600">Our AI "interns" handle the heavy lifting, generating well-researched, structured first drafts at incredible speed, freeing up human creativity for what matters most.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">3. Human-Centric Polish</h3>
+                    <p class="text-gray-600">Every piece is meticulously reviewed and refined by a human expert to ensure it has the nuance, authenticity, and strategic intent that only a human can provide.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="mt-20 bg-white p-8 md:p-12 rounded-xl shadow-2xl max-w-4xl mx-auto">
+            <h2 class="text-3xl font-serif font-semibold text-center mb-2">Let's Create Something Meaningful</h2>
+            <p class="text-center text-gray-600 mb-8">Tell us about your content needs. We'll schedule a complimentary strategy call to discuss how we can help you connect with your audience.</p>
+            
+            <form id="contact-form" action="https://formspree.io/f/YOUR_UNIQUE_ID" method="POST">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-500 focus:border-gray-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Your Work Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-500 focus:border-gray-500">
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <label for="details" class="block text-sm font-medium text-gray-700">What are your content goals?</label>
+                    <textarea id="details" name="details" rows="4" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-gray-500 focus:border-gray-500" placeholder="e.g., 'We need to launch a new blog,' 'Our social media feels robotic,' or 'We want to turn our podcast into articles.'"></textarea>
+                </div>
+                <div class="mt-8 text-center">
+                    <button type="submit" class="w-full md:w-auto bg-gray-800 text-white font-bold py-3 px-12 rounded-lg shadow-lg hover:bg-gray-900 transition duration-300 text-lg">
+                        Schedule My Call
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-20">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 Cognitively Yours. All rights reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">Human-Centered Content, Powered by AI.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
