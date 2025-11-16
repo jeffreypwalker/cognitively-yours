@@ -18,12 +18,18 @@
             background-position: center;
         }
         .hero-overlay {
-            background-color: rgba(255, 240, 240, 0.7); /* A soft, warm overlay to make text readable */
+            background-color: rgba(255, 240, 240, 0.7);
         }
+        /* --- Color Palette --- */
         .text-brand-blue { color: #2B6CB0; }
         .bg-brand-blue { background-color: #2B6CB0; }
         .hover\:bg-brand-blue-dark:hover { background-color: #2C5282; }
         .border-brand-blue { border-color: #2B6CB0; }
+        .focus\:border-brand-blue:focus { border-color: #2B6CB0; }
+        .focus\:ring-brand-blue:focus { ring-color: #2B6CB0; }
+        
+        /* --- NEW ACCENT COLOR --- */
+        .bg-brand-magenta { background-color: #D53F8C; } /* A vibrant, professional magenta */
     </style>
 </head>
 <body class="bg-gray-50">
@@ -44,7 +50,7 @@
         </div>
     </header>
 
-    <!-- Hero Section with Background Image -->
+    <!-- Hero Section -->
     <main class="hero-section">
         <div class="hero-overlay w-full h-full">
             <div class="container mx-auto px-6 text-center flex flex-col justify-center items-center min-h-screen">
@@ -71,18 +77,9 @@
                 <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">We provide a complete, "done-for-you" content solution so you can focus on your business.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                    <h3 class="text-2xl font-bold text-brand-blue">Strategic Blog Posts</h3>
-                    <p class="mt-4 text-gray-600">High-quality, SEO-optimized articles that establish you as a thought leader and attract your ideal customers.</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                    <h3 class="text-2xl font-bold text-brand-blue">Engaging Newsletters</h3>
-                    <p class="mt-4 text-gray-600">Build a loyal community with newsletters that your audience actually wants to read, driving engagement and retention.</p>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                    <h3 class="text-2xl font-bold text-brand-blue">Compelling Website Copy</h3>
-                    <p class="mt-4 text-gray-600">Transform your website into a conversion engine with clear, persuasive copy that tells your brand's story.</p>
-                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow"><h3 class="text-2xl font-bold text-brand-blue">Strategic Blog Posts</h3><p class="mt-4 text-gray-600">High-quality, SEO-optimized articles that establish you as a thought leader and attract your ideal customers.</p></div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow"><h3 class="text-2xl font-bold text-brand-blue">Engaging Newsletters</h3><p class="mt-4 text-gray-600">Build a loyal community with newsletters that your audience actually wants to read, driving engagement and retention.</p></div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow"><h3 class="text-2xl font-bold text-brand-blue">Compelling Website Copy</h3><p class="mt-4 text-gray-600">Transform your website into a conversion engine with clear, persuasive copy that tells your brand's story.</p></div>
             </div>
         </div>
     </section>
@@ -95,26 +92,20 @@
                 <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">Quality and authenticity are not accidents. They are the result of a meticulous process.</p>
             </div>
             <div class="max-w-3xl mx-auto">
+                <!-- Step 1 with Magenta Accent -->
                 <div class="flex items-start mb-8 p-6 bg-white rounded-lg shadow-md">
-                    <div class="bg-brand-blue text-white font-bold rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center mr-4 mt-1">1</div>
-                    <div>
-                        <h3 class="text-xl font-bold text-brand-blue">Define Your Persona</h3>
-                        <p class="text-gray-600">We start by deeply understanding your brand's unique voice, audience, and goals to create your custom "Human Persona."</p>
-                    </div>
+                    <div class="bg-brand-magenta text-white font-bold rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center mr-4 mt-1">1</div>
+                    <div><h3 class="text-xl font-bold text-brand-blue">Define Your Persona</h3><p class="text-gray-600">We start by deeply understanding your brand's unique voice, audience, and goals to create your custom "Human Persona."</p></div>
                 </div>
+                <!-- Step 2 with Magenta Accent -->
                 <div class="flex items-start mb-8 p-6 bg-white rounded-lg shadow-md">
-                    <div class="bg-brand-blue text-white font-bold rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center mr-4 mt-1">2</div>
-                    <div>
-                        <h3 class="text-xl font-bold text-brand-blue">AI-Powered Drafting</h3>
-                        <p class="text-gray-600">Our system uses the persona to guide powerful AI in generating a high-quality, structured first draft at incredible speed.</p>
-                    </div>
+                    <div class="bg-brand-magenta text-white font-bold rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center mr-4 mt-1">2</div>
+                    <div><h3 class="text-xl font-bold text-brand-blue">AI-Powered Drafting</h3><p class="text-gray-600">Our system uses the persona to guide powerful AI in generating a high-quality, structured first draft at incredible speed.</p></div>
                 </div>
+                <!-- Step 3 with Magenta Accent -->
                 <div class="flex items-start p-6 bg-white rounded-lg shadow-md">
-                    <div class="bg-brand-blue text-white font-bold rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center mr-4 mt-1">3</div>
-                    <div>
-                        <h3 class="text-xl font-bold text-brand-blue">Meticulous Human Polish</h3>
-                        <p class="text-gray-600">Every word is then reviewed, edited, and refined by an expert human editor to ensure empathy, accuracy, and a genuine connection with your reader.</p>
-                    </div>
+                    <div class="bg-brand-magenta text-white font-bold rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center mr-4 mt-1">3</div>
+                    <div><h3 class="text-xl font-bold text-brand-blue">Meticulous Human Polish</h3><p class="text-gray-600">Every word is then reviewed, edited, and refined by an expert human editor to ensure empathy, accuracy, and a genuine connection with your reader.</p></div>
                 </div>
             </div>
         </div>
@@ -122,22 +113,40 @@
 
     <!-- Contact Form Section -->
     <section id="contact" class="bg-white py-20">
-        <div class="container mx-auto px-6 max-w-xl text-center">
+        <div class="container mx-auto px-6 max-w-2xl text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-brand-blue">Ready to Experience the Difference?</h2>
-            <p class="mt-4 text-lg text-gray-600 mb-8">Request your complimentary, no-obligation article today. See the quality for yourself.</p>
+            <p class="mt-4 text-lg text-gray-600 mb-8">Request your complimentary, no-obligation article by filling out the brief below.</p>
             
-            <form action="YOUR_FORMSPREE_URL_HERE" method="POST" class="text-left">
-                <div class="mb-4">
-                    <label for="email" class="block text-gray-700 font-bold mb-2">Your Email Address</label>
-                    <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-blue">
+            <form action="YOUR_FORMSPREE_URL_HERE" method="POST" class="text-left space-y-6">
+                <div>
+                    <label for="email" class="block text-sm font-bold text-gray-700 mb-2">1. Your Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="name@company.com" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue">
                 </div>
-                <div class="mb-6">
-                    <label for="details" class="block text-gray-700 font-bold mb-2">Tell us about your content needs (Optional)</label>
-                    <textarea id="details" name="details" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-blue"></textarea>
+                <div>
+                    <label for="audience" class="block text-sm font-bold text-gray-700 mb-2">2. Target Audience</label>
+                    <input type="text" id="audience" name="audience" required placeholder="e.g., Early-stage startup founders" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue">
                 </div>
-                <div class="text-center">
+                <div>
+                    <label for="goal" class="block text-sm font-bold text-gray-700 mb-2">3. Primary Goal of the Article</label>
+                    <input type="text" id="goal" name="goal" required placeholder="e.g., To get readers to sign up for our newsletter" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue">
+                </div>
+                <div>
+                    <label for="talking_points" class="block text-sm font-bold text-gray-700 mb-2">4. Key Talking Points or Ideas to Include</label>
+                    <textarea id="talking_points" name="talking_points" rows="3" placeholder="- Point one&#10;- Point two&#10;- Point three" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue"></textarea>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">5. Desired Tone of Voice</label>
+                    <select id="tone_of_voice" name="tone_of_voice" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue">
+                        <option value="" disabled selected>Please select one...</option>
+                        <option value="Professional & Authoritative">Professional & Authoritative</option>
+                        <option value="Friendly & Approachable">Friendly & Approachable</option>
+                        <option value="Witty & Playful">Witty & Playful</option>
+                        <option value="Inspirational & Visionary">Inspirational & Visionary</option>
+                    </select>
+                </div>
+                <div class="text-center pt-4">
                     <button type="submit" class="bg-brand-blue text-white font-bold py-3 px-12 rounded-lg hover:bg-brand-blue-dark transition duration-300 text-lg shadow-lg">
-                        Request My Article
+                        Request My Complimentary Article
                     </button>
                 </div>
             </form>
