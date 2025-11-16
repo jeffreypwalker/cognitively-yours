@@ -28,8 +28,7 @@
         .focus\:border-brand-blue:focus { border-color: #2B6CB0; }
         .focus\:ring-brand-blue:focus { ring-color: #2B6CB0; }
         
-        /* --- NEW ACCENT COLOR --- */
-        .bg-brand-magenta { background-color: #D53F8C; } /* A vibrant, professional magenta */
+        .bg-brand-magenta { background-color: #D53F8C; }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -92,17 +91,14 @@
                 <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">Quality and authenticity are not accidents. They are the result of a meticulous process.</p>
             </div>
             <div class="max-w-3xl mx-auto">
-                <!-- Step 1 with Magenta Accent -->
                 <div class="flex items-start mb-8 p-6 bg-white rounded-lg shadow-md">
                     <div class="bg-brand-magenta text-white font-bold rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center mr-4 mt-1">1</div>
                     <div><h3 class="text-xl font-bold text-brand-blue">Define Your Persona</h3><p class="text-gray-600">We start by deeply understanding your brand's unique voice, audience, and goals to create your custom "Human Persona."</p></div>
                 </div>
-                <!-- Step 2 with Magenta Accent -->
                 <div class="flex items-start mb-8 p-6 bg-white rounded-lg shadow-md">
                     <div class="bg-brand-magenta text-white font-bold rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center mr-4 mt-1">2</div>
                     <div><h3 class="text-xl font-bold text-brand-blue">AI-Powered Drafting</h3><p class="text-gray-600">Our system uses the persona to guide powerful AI in generating a high-quality, structured first draft at incredible speed.</p></div>
                 </div>
-                <!-- Step 3 with Magenta Accent -->
                 <div class="flex items-start p-6 bg-white rounded-lg shadow-md">
                     <div class="bg-brand-magenta text-white font-bold rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center mr-4 mt-1">3</div>
                     <div><h3 class="text-xl font-bold text-brand-blue">Meticulous Human Polish</h3><p class="text-gray-600">Every word is then reviewed, edited, and refined by an expert human editor to ensure empathy, accuracy, and a genuine connection with your reader.</p></div>
@@ -122,18 +118,22 @@
                     <label for="email" class="block text-sm font-bold text-gray-700 mb-2">1. Your Email Address</label>
                     <input type="email" id="email" name="email" required placeholder="name@company.com" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue">
                 </div>
+
                 <div>
                     <label for="audience" class="block text-sm font-bold text-gray-700 mb-2">2. Target Audience</label>
                     <input type="text" id="audience" name="audience" required placeholder="e.g., Early-stage startup founders" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue">
                 </div>
+
                 <div>
                     <label for="goal" class="block text-sm font-bold text-gray-700 mb-2">3. Primary Goal of the Article</label>
                     <input type="text" id="goal" name="goal" required placeholder="e.g., To get readers to sign up for our newsletter" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue">
                 </div>
+
                 <div>
                     <label for="talking_points" class="block text-sm font-bold text-gray-700 mb-2">4. Key Talking Points or Ideas to Include</label>
                     <textarea id="talking_points" name="talking_points" rows="3" placeholder="- Point one&#10;- Point two&#10;- Point three" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue"></textarea>
                 </div>
+
                 <div>
                     <label class="block text-sm font-bold text-gray-700 mb-2">5. Desired Tone of Voice</label>
                     <select id="tone_of_voice" name="tone_of_voice" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue">
@@ -144,6 +144,13 @@
                         <option value="Inspirational & Visionary">Inspirational & Visionary</option>
                     </select>
                 </div>
+
+                <!-- NEW FIELD ADDED HERE -->
+                <div>
+                    <label for="additional_ideas" class="block text-sm font-bold text-gray-700 mb-2">6. Additional Customizations or Ideas (Optional)</label>
+                    <textarea id="additional_ideas" name="additional_ideas" rows="3" placeholder="e.g., A specific competitor to mention, a personal story to include, etc." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue"></textarea>
+                </div>
+
                 <div class="text-center pt-4">
                     <button type="submit" class="bg-brand-blue text-white font-bold py-3 px-12 rounded-lg hover:bg-brand-blue-dark transition duration-300 text-lg shadow-lg">
                         Request My Complimentary Article
